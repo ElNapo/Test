@@ -1,37 +1,70 @@
-## Welcome to GitHub Pages
+## Speedwar
 
-You can use the [editor on GitHub](https://github.com/ElNapo/Test/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Die Siedler Speedwar ist eine Multiplayer Modifikation mit dem Ziel schneller einen Kampf zwischen den einzelnen Spielern
+zu erzeugen. Erzwungen wird dies dadurch, dass der Siedlungsfortschritt durch Ränge beschränkt ist, die man sich durch Kämpfen
+freischalten muss. Desweiteren wurden etliche Anpassungen am Balancing vorgenommen, die den Siedlungsaufbau beschleunigen.
+Damit ihr nicht böse überrascht werdet, erkläre ich im Folgenden alle Änderungen.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Es gibt vier Ränge:
+1. Siedler
+2. Krieger
+3. Feldherr
+4. Eroberer
 
-### Markdown
+Um das ganze Spiel dynamischer zu gestalten, haben wir die Existenz der Siedlung von der Burg und den Dorfzentren losgelöst.
+Eine zerstörte Burg bedeutet nichtmehr dass ihr das Spiel verloren habt und Dorfzentren geben nicht mehr das Bevölkerungslimit vor.
+Stattdessen könnt ihr euch jetzt selbst eure Burgen bauen, genannt Außenposten. Diese geben euch jeweils 100 Dorfzentrumsplätze.
+Der erste Außenposten ist gratis, die Kosten steigen mit der Anzahl der schon gebauten Außenposten. Hier die Kosten für die ersten 6 Außenposten:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Erster Außenposten: Gratis
+Zweiter Außenposten: 
+	Taler: 350
+	Stein: 450
+	Holz: 250
+Dritter Außenposten:
+    Taler: 900
+    Stein: 1250
+    Holz: 700
+Vierter Außenposten:
+    Taler: 2350
+    Stein: 3300
+    Holz: 1900
+Fünfter Außenposten:
+    Taler: 5950
+    Stein: 8350
+    Holz: 4750
+Sechster Außenposten
+    Taler: 13450
+    Stein: 18850
+    Holz: 10750
 
-```markdown
-Syntax highlighted code block
+Ein Spieler hat verloren, wenn alle Leibeigenen, Hauptmänner und Außenposten zerstört wurden. Sollte ein Spieler verlieren oder die 
+Verbindung verlieren, bleibt seine Siedlung aber bestehen.
 
-# Header 1
-## Header 2
-### Header 3
+Es gab massive Veränderungen bei Einheiten- und Gebäudekosten. Der TechTree wurde stark verändert und häufig braucht ihr für gewisse Technologien oder 
+Einheiten einen Mindestrang. Die Ränge ermöglichen euch(nachdem eventuell andere Bedingungen erfüllt wurden):
 
-- Bulleted
-- List
+Rang Siedler:
+	Ausbildung von Speerträgern, Schwertkämpfern und Bogenschützen. Ausbau zu mittleren Wohnhäusern und Mühlen möglich.
+Rang Krieger:
+	Ihr könnt nun Lvl2-Einheiten erforschen, Leichte Kavallerie und Kirchen können gebaut werden. Außerdem habt ihr jetzt die Möglichkeit, das Wetter 
+	zu verändern und Kanonen zu bauen.
+Rang Feldherr:
+	Zugriff auf Lvl3-Einheiten, leichte Scharfschützen und schwere Kavallerie. Ihr könnt nun eine Kathedrale, Märkte und Balistatürme bauen lassen.
+	Alle Hauptspielveredeler lassen sich nun auf die höchste Stufe ausbauen.
+Rang Eroberer:
+	Keinerlei Einschränkungen.
 
-1. Numbered
-2. List
+Änderungen an Einheiten und Gebäuden:
+	Aussichtstürme und die bewaffneten Türme besitzen nun einen sehr großen Sichtradius.
+	Leichte Kavallerie macht mit ihrem ersten Angriff gegen Einheiten massiven Bonusschaden, weil sie einen magischen Pfeil vorbereitet haben.
+	Leichte Kavallerie beschaffen euch Gold für jede Einheit, die von ihnen getötet wird. Die Menge des geplünderten Goldes ist in jedem Außenposten einsehbar.
+	Leibeigene kosten 15 Holz.
+	Veredeler und Minen sind deutlich effektiver. Der Ausbau von Veredelern erhöht auch die Menge, die pro Veredelungstick produziert wird.
+	Außenposten heilen sich auf Kosten der sich in der Nähe befindlichen Gebäude. 
+		Die effektiven HP eines Außenposten liegen bei 1000 + GesamtHP aller umliegenden Gebäude/25.
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ElNapo/Test/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Neuerungen:
+	Ihr könnt Mauern ähnlich wie bei Anarkis Mauerbau bauen!
+	Mit [Strg]+Klick auf den Soldatennachkaufbutton könnt ihr alle Truppen in der Selektion auffüllen.
+	Überall auf der Map sind Kisten verteilt, die von Leibeigenen oder Hauptmännern geöffnet werden können.
