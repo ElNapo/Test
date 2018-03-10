@@ -22,6 +22,25 @@ Der erste Außenposten ist gratis, die Kosten steigen mit der Anzahl der schon g
 |Holz| 0 | 250 | 700 | 1900 | 4750 | 10750 |
 |Stein| 0 | 450 | 1250 | 3300 | 8350 | 18850 |
 
+### Liste von zu erwähnenden Änderungen
+- DefeatCondition
+- TechTree
+- RandomWeather
+- Türme: Sichtweite, TechTree, Pappe
+- Movementspeedrebalance
+- Außenposten mit steigenden Kosten, Tankiness, DZPlatz
+- Veränderte Einheiten- und Gebäudekosten
+- Plünderskript
+- Standhafte Ficker
+- LKav-Änderung
+- Mauerbau
+- QualityOfLife-Changes
+- RandomStart
+- RefineryPush
+- ProgressWindow
+- TradeFix
+- WinCondition
+
 Ein Spieler hat verloren, wenn alle Leibeigenen, Hauptmänner und Außenposten zerstört wurden. Sollte ein Spieler verlieren oder die 
 Verbindung verlieren, bleibt seine Siedlung aber bestehen.
 
