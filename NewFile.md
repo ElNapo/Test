@@ -1,7 +1,7 @@
 ## Speedwar
 
 Die Siedler Speedwar ist eine Multiplayer Modifikation mit dem Ziel schneller einen Kampf zwischen den einzelnen Spielern
-zu erzeugen. Erzwungen wird dies dadurch, dass der Siedlungsfortschritt durch Ränge beschränkt ist, die man sich durch Kämpfen
+zu erzeugen. Erzwungen wird dies dadurch, dass der **Siedlungsfortschritt durch Ränge** beschränkt ist, die man sich durch **Kämpfen**
 freischalten muss. Desweiteren wurden etliche Anpassungen am Balancing vorgenommen, die den Siedlungsaufbau beschleunigen.
 Damit ihr nicht böse überrascht werdet, erkläre ich im Folgenden alle Änderungen.
 
@@ -13,30 +13,14 @@ Es gibt vier Ränge:
 
 Um das ganze Spiel dynamischer zu gestalten, haben wir die Existenz der Siedlung von der Burg und den Dorfzentren losgelöst.
 Eine zerstörte Burg bedeutet nichtmehr dass ihr das Spiel verloren habt und Dorfzentren geben nicht mehr das Bevölkerungslimit vor.
-Stattdessen könnt ihr euch jetzt selbst eure Burgen bauen, genannt Außenposten. Diese geben euch jeweils 100 Dorfzentrumsplätze.
+Stattdessen könnt ihr euch jetzt selbst eure Burgen bauen, genannt Außenposten. Diese geben euch jeweils **100 Dorfzentrumsplätze**.
 Der erste Außenposten ist gratis, die Kosten steigen mit der Anzahl der schon gebauten Außenposten. Hier die Kosten für die ersten 6 Außenposten:
 
-Erster Außenposten: Gratis
-Zweiter Außenposten: 
-	Taler: 350
-	Stein: 450
-	Holz: 250
-Dritter Außenposten:
-    Taler: 900
-    Stein: 1250
-    Holz: 700
-Vierter Außenposten:
-    Taler: 2350
-    Stein: 3300
-    Holz: 1900
-Fünfter Außenposten:
-    Taler: 5950
-    Stein: 8350
-    Holz: 4750
-Sechster Außenposten
-    Taler: 13450
-    Stein: 18850
-    Holz: 10750
+
+|#Aussenposten| 1 | 2 | 3 | 4 | 5 | 6 |
+|Taler| 0 | 350 | 900 | 2350 | 5950 | 13450 |
+|Holz| 0 | 250 | 700 | 1900 | 4750 | 10750 |
+|Stein| 0 | 450 | 1250 | 3300 | 8350 | 18850 |
 
 Ein Spieler hat verloren, wenn alle Leibeigenen, Hauptmänner und Außenposten zerstört wurden. Sollte ein Spieler verlieren oder die 
 Verbindung verlieren, bleibt seine Siedlung aber bestehen.
