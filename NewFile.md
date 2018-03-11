@@ -1,9 +1,23 @@
-## Speedwar
+# Speedwar
 
-Die Siedler Speedwar ist eine Multiplayer Modifikation mit dem Ziel schneller einen Kampf zwischen den einzelnen Spielern
-zu erzeugen. Erzwungen wird dies dadurch, dass der **Siedlungsfortschritt durch Ränge** beschränkt ist, die man sich durch **Kämpfen**
-freischalten muss. Desweiteren wurden etliche Anpassungen am Balancing vorgenommen, die den Siedlungsaufbau beschleunigen.
-Damit ihr nicht böse überrascht werdet, erkläre ich im Folgenden alle Änderungen.
+Speedwar ist eine Modifikation für das Spiel "Die Siedler - Das Erbe der Könige Legenden", die das Spiel im Multiplayer 
+beschleunigen und von Dorfzentren loslösen soll. Dies wird dadurch erreicht, dass Technologien durch **Ränge** 
+begrenzt sind, welche wiederum **erkämpft** werden. Weiterhin wurden große Veränderungen an den Einheiten vorgenommen, 
+um ein schnelleres Spiel zu ermöglichen. Im Folgenden seht ihr alle Änderungen.
+
+## Außenposten
+Siedler ohne Dorfzentren? Ja! Ihr könnt Außenposten bauen, die zwar mit steigender Anzahl sehr viel teurer werden, welche 
+aber sowohl 100 Bevölkerungsplätze als auch die Rekrutierung von Leibeigenen ermöglichen. Hier seht ihr die Kosten der ersten 6 Außenposten:
+
+|Gebaute Aussenposten| 1 | 2 | 3 | 4 | 5 | 6 |
+|Taler| 0 | 350 | 900 | 2350 | 5950 | 13450 |
+|Holz| 0 | 250 | 700 | 1900 | 4750 | 10750 |
+|Stein| 0 | 450 | 1250 | 3300 | 8350 | 18850 |
+
+### ```Das ist viel. Können die nicht einfach zerstört werden?```
+Und genau deswegen besitzen Außenposten eine besondere Fähigkeit: Wird der Außenposten beschädigt, so schicken andere Gebäude Lebenspunkte 
+an den beschädigten Außenposten, um ihn zu heilen. Dies funktioniert jedoch nur, solange die Umgebungsgebäude bei mehr als 60% ihrer maximalen HP liegen.
+
 
 Es gibt vier Ränge:
 1. Siedler
@@ -16,19 +30,14 @@ Eine zerstörte Burg bedeutet nichtmehr dass ihr das Spiel verloren habt und Dor
 Stattdessen könnt ihr euch jetzt selbst eure Burgen bauen, genannt Außenposten. Diese geben euch jeweils **100 Dorfzentrumsplätze**.
 Der erste Außenposten ist gratis, die Kosten steigen mit der Anzahl der schon gebauten Außenposten. Hier die Kosten für die ersten 6 Außenposten:
 
-
-|#Aussenposten| 1 | 2 | 3 | 4 | 5 | 6 |
-|Taler| 0 | 350 | 900 | 2350 | 5950 | 13450 |
-|Holz| 0 | 250 | 700 | 1900 | 4750 | 10750 |
-|Stein| 0 | 450 | 1250 | 3300 | 8350 | 18850 |
-
+### Liste von erwähnten Änderungen
+- Außenposten mit steigenden Kosten, Tankiness, DZPlatz
 ### Liste von zu erwähnenden Änderungen
 - DefeatCondition
 - TechTree
 - RandomWeather
 - Türme: Sichtweite, TechTree, Pappe
 - Movementspeedrebalance
-- Außenposten mit steigenden Kosten, Tankiness, DZPlatz
 - Veränderte Einheiten- und Gebäudekosten
 - Plünderskript
 - Standhafte Ficker
