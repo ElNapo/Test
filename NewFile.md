@@ -9,7 +9,7 @@ um ein schnelleres Spiel zu ermöglichen. Im Folgenden seht ihr alle Änderungen
 Siedler ohne Dorfzentren? Ja! Ihr könnt Außenposten bauen, die zwar mit steigender Anzahl sehr viel teurer werden, welche 
 aber sowohl 100 Bevölkerungsplätze als auch die Rekrutierung von Leibeigenen ermöglichen. Hier seht ihr die Kosten der ersten 6 Außenposten:
 
-|Gebaute Aussenposten| 1 | 2 | 3 | 4 | 5 | 6 |
+|Gebaute Aussenposten| 0 | 1 | 2 | 3 | 4 | 5 |
 |Taler| 0 | 350 | 900 | 2350 | 5950 | 13450 |
 |Holz| 0 | 250 | 700 | 1900 | 4750 | 10750 |
 |Stein| 0 | 450 | 1250 | 3300 | 8350 | 18850 |
@@ -17,7 +17,7 @@ aber sowohl 100 Bevölkerungsplätze als auch die Rekrutierung von Leibeigenen e
 ### Das ist viel. Können die nicht einfach zerstört werden?
 Und genau deswegen besitzen Außenposten eine besondere Fähigkeit: Wird der Außenposten beschädigt, so schicken andere Gebäude Lebenspunkte 
 an den beschädigten Außenposten, um ihn zu heilen. Dies funktioniert jedoch nur, solange die Umgebungsgebäude bei mehr als 60% ihrer maximalen HP liegen. 
-Auch ist die Umwandlung etwas ineffizient, 40 Lebenspunkte werden zu einem Lebenspunkt des Außenpostens umgewandelt.
+Auch ist die Umwandlung etwas ineffizient, 25 Lebenspunkte werden zu einem Lebenspunkt des Außenpostens umgewandelt.
 
 ## Ränge
 Durch Teilnahme an einer Schlacht könnt ihr Punkte sammeln, die in einem höheren Rang münden können. Infolge eines höheren Rangs erhaltet 
@@ -69,7 +69,55 @@ Kudschafter: 350 -> 550
 Türme - in praktisch jedem Spiel verboten oder stark limitiert. Deshalb haben wir ein paar Änderungen vorgenommen: Zunächst wurden sowohl Kosten als auch 
 Sichtweite von allen drei Türmen massiv erhöht. Ein einfacher Aussichtsturm ist jetzt sinnvoll!
 Die bewaffneten Türme kommen aber deutlich später ins Spiel: Ballistatürme brauchen den Rang Feldherr, Kanonentürme sogar Eroberer.
-Aussichtstürme halten praktisch nichts aus, ein Kanonenturm ist aber massiver als die meisten Zivilgebäude.
+Aussichtstürme halten praktisch nichts aus, ein Kanonenturm ist aber stabiler als die meisten Zivilgebäude.
+
+## Neue Befestigungsanlagen
+Wie Ihr sicher schon bemerkt habt, sind die Speedwar-Maps offener als die üblichen Multiplayermaps. Damit Ihr euch gegen die schnelleren Einheiten 
+besser verteidigen könnt, haben wir neue Befestigungsanlagen eingebaut:
+Mauern und Standhafte Türme!
+
+Mauern könnt ihr errichten, sobald ihr Konstruktion erforscht habt. Das Tor und die normale Mauer verhalten sich wie Anarkis Mauern:
+Eine fertiggestellte Mauer versucht, sich an eine bestehende Mauer anzuschließen. 
+Die Abschlussmauer hat zwei Verwendungszwecke: Eine Abschlussmauer versucht zuerst, eine Lücke in der Mauer zu schließen. Falls keine Lücke 
+gefunden wird, setzt die Abschlussmauer eine existierende Mauer in die gleiche Richtung fort. So könnt ihr sehr geradlinige Mauern bauen.
+
+Den Standhaften Turm könnt ihr erst auf dem Rang Krieger verwenden, gibt euch aber die Möglichkeit, Truppen einzulagern. Wenn ihr eurer Armee 
+den Auftrag gebt, den Turm zu bewachen, so werden sich einige Soldaten im Turm niederlassen. Sie brauchen in dieser Phase keinen Platz im 
+Dorfzentrum und können bei Bedarf - und ausreichendem Bevölkerungslimit - den Turm verlassen. Sollte der Turm zerstört werden, so gehen alle 
+stationierten Soldaten verloren. Stationierte Soldaten werden auch nicht aufgewertet, wenn ihr die nächste Stufe erforscht.
+
+## Sieg und Niederlage
+Im Gegensatz zum Hauptspiel hängen Sieg und Niederlage nicht von einem einzigen Gebäude ab. Endgültig verloren habt ihr erst, wenn jeder Leibeigene, 
+jede Milize, jeder Hauptmann und jeder Außenposten besiegt ist - oder wenn ihr nach Ablauf der Spielzeit nicht das größte Gebiet kontrolliert.
+Und damit sind wir bei der Siegbedingung:
+Das Team, welches nach Ablauf der Zeit - momentan 90 Minuten - das größte Gebiet besitzt, gewinnt und das Spiel wird beendet. Dazu wird die Map 
+in Zellen aufgeteilt, die ungefähr so groß wie 4 Kasernen sind. Ein Team kontrolliert eine Zelle, falls es mehr Hauptmänner und fertige Gebäude 
+in dieser Zelle hat als alle anderen Teams. Die Anzahl der momentan kontrollierten Zellen ist in jedem Außenposten im neuen Menü einsehbar und 
+wird als Zahl links der Spielernamen angezeigt.
+
+Solltet Euer Team aus dem Spiel ausscheiden, bleiben eure Gebäude aber noch bestehen und die Karte wird für Euch aufgedeckt.
+
+## Änderungen an Veredelern
+Damit Ihr auch an die Ressourcen für ein mächtiges Militär kommt, haben wir die Arbeit der Veredeler und Bergarbeiter etwas beschleunigt.
+Die Bergarbeiter holen pro Arbeitsschritt 16/20/24 Ressourcen aus ihrer Mine, je nach Ausbaustufe. Für die Veredeler lauten die Werte:
+```
+Schmiede: 6 / 9 / 12
+Ziegelhütte: 6 / 12
+Sägewerk: 8 / 16
+Alchemistenhütte: 8 / 12
+Bank: 4 / 6
+Steinmetze: 6 / 9
+```
+
+## Kleine Änderungen
+- Leibeigene kosten 15 Holz.
+- Es gibt einige neue Wetterlagen wie z.B. Sturm, Schneeregen oder "saurer" Regen
+- Das Zerstören von Gebäuden gibt Euch Ressourcen, momentan 75% der Baukosten.
+- Die Startpositionen sind zufällig, werden aber auf der Minimap markiert.
+- Die Preisverhältnisse im Marktplatz sind konstant.
+- Wenn ihr Soldaten nachkauft und [Strg] gedrückt haltet, wird versucht, alle Truppen in der Selektion aufzufüllen.
+- Wenn ihr Einheiten entlasst und [Strg] gedrückt haltet, wird die komplette Selektion entlassen.
+- Sollte ein Spieler das Spiel verlassen, wird der Name des aktuellen Hosts ausgegeben.
 
 
 ### Liste von erwähnten Änderungen
@@ -80,29 +128,13 @@ Aussichtstürme halten praktisch nichts aus, ein Kanonenturm ist aber massiver a
 - Movementspeedrebalance
 - Veränderte Einheiten- und Gebäudekosten
 - Türme: Sichtweite, TechTree, Pappe
-### Liste von zu erwähnenden Änderungen
-- DefeatCondition
-- RandomWeather
-- Plünderskript
 - Standhafte Ficker
 - Mauerbau
-- QualityOfLife-Changes
-- RandomStart
-- RefineryPush
-- TradeFix
 - WinCondition
-
-Ein Spieler hat verloren, wenn alle Leibeigenen, Hauptmänner und Außenposten zerstört wurden. Sollte ein Spieler verlieren oder die 
-Verbindung verlieren, bleibt seine Siedlung aber bestehen.
-
-Änderungen an Einheiten und Gebäuden:
-	Aussichtstürme und die bewaffneten Türme besitzen nun einen sehr großen Sichtradius.
-	Leibeigene kosten 15 Holz.
-	Veredeler und Minen sind deutlich effektiver. Der Ausbau von Veredelern erhöht auch die Menge, die pro Veredelungstick produziert wird.
-	Außenposten heilen sich auf Kosten der sich in der Nähe befindlichen Gebäude. 
-		Die effektiven HP eines Außenposten liegen bei 1000 + GesamtHP aller umliegenden Gebäude/25.
-
-Neuerungen:
-	Ihr könnt Mauern ähnlich wie bei Anarkis Mauerbau bauen!
-	Mit [Strg]+Klick auf den Soldatennachkaufbutton könnt ihr alle Truppen in der Selektion auffüllen.
-	Überall auf der Map sind Kisten verteilt, die von Leibeigenen oder Hauptmännern geöffnet werden können.
+- DefeatCondition
+- RefineryPush
+- RandomWeather
+- Plünderskript
+- RandomStart
+- TradeFix
+- QualityOfLife-Changes
