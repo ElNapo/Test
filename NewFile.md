@@ -49,7 +49,7 @@ zu verändern und Kanonen zu bauen.
 ### Feldherr
 Zugriff auf Lvl3-Einheiten, leichte Scharfschützen und schwere Kavallerie. Ihr könnt nun eine Kathedrale, Märkte und Balistatürme bauen lassen.
 Alle Hauptspielveredeler lassen sich nun auf die höchste Stufe ausbauen.
-### Eroberer:
+### Eroberer
 Alles, was Euch aus dem Spiel bekannt ist, ist möglich.
 
 Damit haben wir das Wichtigste eigentlich schon zusammen, aber wir noch viele kleine Änderungen vorgenommen.
@@ -118,7 +118,7 @@ Bank: 4 / 6
 Steinmetze: 6 / 9
 ```
 
-##Hotkeys
+## Hotkeys
 Wir haben das Original um einige Tastenkombinationen ergänzt, die Euch das Verwalten Eurer Siedlung erleichtern sollten:
 - Wenn Ihr [Strg] gedrückt haltet und Soldaten nachkauft, wird versucht, die komplette Selektion aufzufüllen. Ressourcen, die richtigen Militärgebäude und genug 
 Platz braucht Ihr aber trotzdem.
